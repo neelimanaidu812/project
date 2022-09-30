@@ -1,1 +1,14 @@
-hey 
+[[rules]]
+id="10-abc"
+title="10-abc"
+description="""
+events
+"""
+source="""
+rule "10-abc"
+when 
+    has_field ( "byte" )
+then
+    remove_field( "bytes" );
+  end
+  """
